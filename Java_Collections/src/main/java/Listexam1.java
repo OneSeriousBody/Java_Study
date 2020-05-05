@@ -40,6 +40,14 @@ public class Listexam1 {
                     1 2 3 4 5
          */
 
-
+        System.out.println();
+        Integer a = 1;
+        Integer b = 2;
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(0,a);
+        list1.add(0,b);
+        for (int i = 0; i < list1.size(); i++) {
+            System.out.print(list1.get(i));
+        }
     }
 }
