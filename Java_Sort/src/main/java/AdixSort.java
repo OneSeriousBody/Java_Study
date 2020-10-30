@@ -44,14 +44,13 @@ public class AdixSort {
         queue.get(x).add(arr[j]);
       }
 
-      //收集
+      //排好序的数据放入数组
       int times = 0;
       for(int j=0;j<10;j++){
         while(queue.get(j).size() > 0){
           ArrayList arrayList = queue.get(j);
-          arr[times] = (int) arrayList.get(0);
+          arr[times++] = (int) arrayList.get(0);
           arrayList.remove(0);
-          times++;
         }
       }
     }
